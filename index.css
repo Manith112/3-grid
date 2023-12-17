@@ -1,0 +1,105 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f2f2f2;
+}
+.container{
+    border-radius: 10px;
+   
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.container > .first{
+    background-color: #e28525;
+    padding: 40px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.container > .second{
+    background-color: #016972;
+    padding: 40px;
+}
+.container > .third{
+    background-color: #00403f;
+    border-top-right-radius: 10px;
+    padding: 40px;
+    border-bottom-right-radius: 10px;
+}
+.title{
+    padding: 30px 0px;
+    text-transform: uppercase;
+    color: #f2f2f2;
+}
+.para{
+    padding-bottom: 60px;
+    line-height: 25px;
+    color: white;
+}
+.first > .btn{
+    padding: 15px;
+    width: 140px;
+    border-radius: 50px;
+    border: none;
+    color: #e28525;
+}
+.second > .btn{
+    padding: 15px;
+    width: 140px;
+    border-radius: 50px;
+    border: none;
+    color: #00403f;
+}
+.third > .btn{
+    padding: 15px;
+    width: 140px;
+    border-radius: 50px;
+    border: none;
+    color: #016972;
+}
+.first > .btn:hover{
+    background-color: #e28525;
+    border: 1px solid white;
+    color: white;
+    cursor: pointer;
+}
+.second > .btn:hover{
+    background-color: #016972;
+    border: 1px solid white;
+    color: white;
+    cursor: pointer;
+}
+.third > .btn:hover{
+    background-color: #00403f;
+    border: 1px solid white;
+    color: white;
+    cursor: pointer;
+}
+@media screen and (max-width: 1024px){
+    
+    .container{
+        border-radius: 10px;
+       margin: 40px 0px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+   .container > .first{
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 0px;
+        
+    }
+    .container > .third {
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+}
